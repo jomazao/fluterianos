@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "921861268324",
+    "firebase_url": "https://flutterianos.firebaseio.com",
+    "project_id": "flutterianos",
+    "storage_bucket": "flutterianos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921861268324:android:9f43a1dd12ed7ebe",
+        "android_client_info": {
+          "package_name": "com.ibacrea.flutterianos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921861268324-5i4e75b93truk8ctospp3tj0apeop281.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1E0FK2iz0_B0WOo41urlNPDYy6rOHnjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921861268324-5i4e75b93truk8ctospp3tj0apeop281.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

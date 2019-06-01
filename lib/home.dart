@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'aprender.dart';
+import 'listaProyectos.dart';
 
 class Home extends StatelessWidget {
 
@@ -10,6 +11,14 @@ class Home extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => Aprender()),
+    );
+  }
+
+  _cooperar(BuildContext context){
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Listado()),
     );
   }
 
@@ -32,13 +41,12 @@ class Home extends StatelessWidget {
       ),
       
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: ListView(
+          scrollDirection: Axis.vertical,
+
 
           children: <Widget>[
-            
+
             Image.asset("assets/images/home.jpg"),
 
 
@@ -58,7 +66,9 @@ class Home extends StatelessWidget {
               height:100,
             width: 200,
             child: RaisedButton(
+              onPressed: ()=>_cooperar(context),
               child: Text("Cooperar",style: TextStyle(fontSize: 30),),
+
             ),
             ),
 

@@ -13,7 +13,7 @@ class Aprender extends StatelessWidget{
 
         child: Image.asset("assets/images/aprender.png"),
 
-        mainAxisAlignment: MainAxisAlignment.start,
+      //  mainAxisAlignment: MainAxisAlignment.start,
 
 
 

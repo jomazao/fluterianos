@@ -71,6 +71,8 @@ class Home extends StatelessWidget {
             decoration: BoxDecoration(
 
               color: const Color(0xff7c94b6),
+
+
             ),
 
 

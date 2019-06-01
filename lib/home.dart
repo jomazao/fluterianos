@@ -13,32 +13,101 @@ class Home extends StatelessWidget {
     );
   }
 
+  int _cIndex = 0;
 
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
       appBar: AppBar(
+
         title: Text("Proyectos Fluterianos"),
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[],
+        ),
+
+
+      ),
+      
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.start,
+          
+          crossAxisAlignment: CrossAxisAlignment.center,
+
           children: <Widget>[
-            RaisedButton(
-              child: Text("Aprender"),
-              onPressed: ()=>_aprender(context),
+            
+            Image.asset("assets/images/home.jpg"),
+
+
+            Container(
+              padding: EdgeInsets.all(8.0),
+              height: 100,
+              width: 200,
+              child: RaisedButton(
+                child: Text("Aprender",style: TextStyle(fontSize: 30),),
+                onPressed: ()=>_aprender(context),
+              ),
             ),
-            RaisedButton(
-              child: Text("Cooperar"),
+
+            Container(
+
+              padding: EdgeInsets.all(8.0),
+              height:100,
+            width: 200,
+            child: RaisedButton(
+              child: Text("Cooperar",style: TextStyle(fontSize: 30),),
             ),
-            RaisedButton(
-              child: Text("Trabajar"),
-            )
+            ),
+
+
+            Container(
+              padding: EdgeInsets.all(8.0),
+              height:100,
+              width: 200,
+
+            decoration: BoxDecoration(
+
+              color: const Color(0xff7c94b6),
+            ),
+
+
+            child: RaisedButton(
+              child: Text("Trabajar",style: TextStyle(fontSize: 30),),
+
+
+
+            ),
+            ),
           ],
         ),
       ),
+
+      bottomNavigationBar: BottomNavigationBar(
+
+        currentIndex: _cIndex,
+        type: BottomNavigationBarType.shifting,
+        items: [
+      BottomNavigationBarItem(
+      icon: Icon(Icons.add_to_home_screen ,color: Color.fromARGB(255, 0, 0, 0)),
+        title: new Text('')
+      ),
+
+          BottomNavigationBarItem(
+              icon: Icon(Icons.add_location ,color: Color.fromARGB(255, 0, 0, 0)),
+              title: new Text('')
+          ),
+
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_box ,color: Color.fromARGB(255, 0, 0, 0)),
+              title: new Text('')
+          ),
+
+        ]
+      ),
+
     );
   }
 }
